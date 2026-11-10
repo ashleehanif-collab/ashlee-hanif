@@ -83,3 +83,14 @@
 .stats-grid.played .stat-card i{animation:statPop .7s ease both}
 @keyframes statRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 @keyframes statPop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
+.architecture .live-dot{animation:energyBeat 1.6s ease-in-out infinite}
+.architecture .flow-line{overflow:visible}
+.architecture .flow-line::before{content:"";position:absolute;left:-3px;width:7px;height:14px;border-radius:8px;background:linear-gradient(#fff,#69d9f3);box-shadow:0 0 12px 3px #69d9f3;animation:energyFlow 1.5s linear infinite}
+.architecture .engine+.flow-line::before{animation-delay:.75s}
+.architecture .engine{animation:energyGlow 2.4s ease-in-out infinite}
+.architecture .engine-symbol{animation:energyPulse 2.4s ease-in-out infinite}
+@keyframes energyBeat{0%,100%{box-shadow:0 0 6px #63d5bb}50%{box-shadow:0 0 16px 5px #63d5bb}}
+@keyframes energyFlow{0%{top:-16px;opacity:0}20%{opacity:1}80%{opacity:1}100%{top:34px;opacity:0}}
+@keyframes energyGlow{0%,100%{box-shadow:0 0 32px #15abd20a}50%{box-shadow:0 0 30px #69d9f366,inset 0 0 22px #69d9f322}}
+@keyframes energyPulse{0%,100%{filter:drop-shadow(0 0 0 #69d9f3)}50%{filter:drop-shadow(0 0 8px #69d9f3)}}
+@media (prefers-reduced-motion:reduce){.architecture .live-dot,.architecture .flow-line::before,.architecture .engine,.architecture .engine-symbol{animation:none}}
