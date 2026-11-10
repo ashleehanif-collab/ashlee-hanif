@@ -107,4 +107,6 @@
 @keyframes wireCurrent{to{stroke-dashoffset:-224}}
 .expertise>.about-title,.expertise>.section-text,.expertise>.expertise-grid{position:relative;z-index:1}
 @media (prefers-reduced-motion:reduce){.expertise .spark{animation:none;opacity:0}}
+.about{position:relative;z-index:0}
+.about::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:#e4edf6}
 .expertise>.about-title,.expertise>.section-text,.expertise>.expertise-grid{position:relative;z-index:1}
