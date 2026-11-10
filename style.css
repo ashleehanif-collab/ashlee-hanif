@@ -74,3 +74,12 @@
 .secondary-btn:hover{border-color:#8fd8f2;box-shadow:0 10px 24px #69d9f333}
 .btn::after,.contact-form button::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,#ffffff80 50%,transparent 80%);transform:translateX(-130%);pointer-events:none}
 .btn:hover::after,.contact-form button:hover::after{transform:translateX(130%);transition:transform .6s ease}
+.stat-card{transition:transform .28s ease,box-shadow .28s ease}
+.stat-card:hover{transform:translateY(-6px);box-shadow:0 16px 32px #10233b14}
+.stats-grid.played .stat-card{animation:statRise .7s ease both}
+.stats-grid.played .stat-card:nth-child(2){animation-delay:.12s}
+.stats-grid.played .stat-card:nth-child(3){animation-delay:.24s}
+.stats-grid.played .stat-card:nth-child(4){animation-delay:.36s}
+.stats-grid.played .stat-card i{animation:statPop .7s ease both}
+@keyframes statRise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes statPop{from{transform:scale(.6);opacity:0}to{transform:none;opacity:1}}
