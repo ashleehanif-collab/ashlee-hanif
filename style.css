@@ -36,3 +36,18 @@
 .footer-links a:hover{border-color:var(--cyan);background:#ffffff1c}
 .footer-links i{color:var(--cyan);font-size:14px}
 @media (max-width:800px){.employers .employer-grid{grid-template-columns:1fr}.employer-top{flex-direction:column}.employers .job-date{margin-top:8px}}
+.portfolio .cards-grid{gap:22px;align-items:stretch}
+.portfolio .portfolio-card{padding:14px 14px 18px;border-radius:22px;background:#fff;box-shadow:0 16px 38px #10233b0d}
+.portfolio .portfolio-card>img{height:198px;margin:0 0 18px;border:1px solid #e7eef5;border-radius:14px;background:#f7fbfe}
+.portfolio .portfolio-card>h3,.portfolio .portfolio-card>p,.portfolio .portfolio-card>.card-details{margin-left:8px;margin-right:8px}
+.portfolio .portfolio-card>h3{font-size:20px;margin-bottom:8px}
+.portfolio .portfolio-card>p{font-size:14px;line-height:1.7;min-height:3.4em}
+.portfolio .portfolio-card>.card-details{margin-top:14px;padding-top:14px}
+.portfolio .card-details summary{font-size:13px}
+.portfolio .card-details summary span{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:#e7f5fb;font-size:18px;line-height:1}
+.expertise .expertise-grid{align-items:start;gap:14px;margin-top:28px}
+.expertise .expertise-card{padding:16px 16px 14px}
+.expertise .expertise-card i{width:36px;height:36px;margin-bottom:12px;font-size:16px}
+.expertise .expertise-card h3{margin-bottom:10px;font-size:18px}
+.expertise .tags{gap:6px}
+.expertise .tags span{padding:6px 10px;font-size:12px;border-radius:7px}
