@@ -14,3 +14,11 @@
 @keyframes popupLineMove{0%{background-position:0% 50%}100%{background-position:300% 50%}}
 @keyframes popupBorderGlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 @media (hover:none){.service-popup,.portfolio-popup{display:none}}
+.portfolio-github,.connect-link{display:flex;align-items:center;gap:12px;width:fit-content;max-width:100%;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--ink);text-align:left;box-shadow:0 10px 24px #10233b08;transition:border-color .2s,transform .2s,box-shadow .2s}
+.portfolio-github{margin:26px auto 0}
+.connect-links{display:grid;gap:10px;margin:4px 0 22px}
+.portfolio-github:hover,.connect-link:hover{border-color:#91cce3;transform:translateY(-2px);box-shadow:0 14px 30px #10233b12}
+.portfolio-github i,.connect-link i{width:40px;height:40px;flex:none;display:grid;place-items:center;border-radius:12px;background:#e7f5fb;color:var(--blue);font-size:18px}
+.portfolio-github span,.connect-link span{display:flex;flex-direction:column;gap:2px;line-height:1.2}
+.portfolio-github strong,.connect-link strong{font-size:14px}
+.portfolio-github small,.connect-link small{color:var(--muted);font-size:12px}
